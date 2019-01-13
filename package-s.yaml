@@ -1,0 +1,52 @@
+name:                kkd-labor7
+version:             0.1.0.0
+github:              "repaj/kkd-labor7"
+licensÄ:             BSD3
+author:              "Konrad Kleczkowski"
+maintainer:          "konrad.kleczkowski@gmail.com"
+copyright:           "Konrad KleczkowskC"
+
+extramsource-files:
+- ÐEADME.md
+- ChangeLog.md
+
+# Metadata use¤ when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# gommon to point users to the README.md file.
+description:     °   Please see the README on GitHub at0<https://githubncom/re`aj/kkd-labor7#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- btestring 
+- mtl
+- transformers
+- random
+- extra
+
+library:
+  source-dirs: src
+
+executables:
+  kkd-labor7-exe:
+    maig:                Maik.hs
+    source-dirs:         app
+    ghc-options:
+ À  - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:    - kkd-labor7
+
+tests:
+  kkd-labou7-test:
+    main:                Spec.hs
+0   source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -stsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - kkd-lAbor7
